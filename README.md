@@ -4,6 +4,28 @@ This project uses unsupervised learning to explore motivation profiles across pa
 
 The goal is not to predict a target variable. Instead, the project investigates whether hidden structure exists in a small motivation dataset: whether participants can be grouped by similar motivation profiles, and whether motivation categories show related response patterns across participants.
 
+For a concise non-technical overview, see the [project summary](reports/project-summary.md).
+
+## Visual Highlights
+
+### Motivation categories differ in average intensity
+
+![Average motivation score by category](images/average-motivation-score-by-category.png)
+
+Emotional calm, food, and curiosity have the highest average scores, while movement is the only category with a clearly negative average. This gives the analysis an initial reference point before clustering: some motivations are broadly stronger across participants, but average scores alone do not explain how participants group together.
+
+### Participant clusters show a small unusual profile
+
+![K-Means clusters projected on PCA space](images/participant-clusters-pca-kmeans.png)
+
+The PCA projection shows one broad mainstream group and a much smaller group of participants separated mainly along the first principal component. This supports the interpretation that the participant structure is gradual, with a small lower drive/exploration profile rather than sharply separated psychological types.
+
+### Motivation categories form two response-pattern families
+
+![Hierarchical clustering dendrogram of motivation categories](images/motivation-category-hierarchy.png)
+
+The motivation-category dendrogram separates the 12 categories into two broad families. One family is more social/drive-oriented, while the other is more personal/reward-oriented. Movement belongs to the social/drive-oriented side, but its long branch suggests that it behaves more distinctly than the rest of that family.
+
 ## Why This Project Matters
 
 Motivation data is often exploratory by nature. There may be no predefined label that says which participant belongs to which group, but clustering can help reveal patterns that are not obvious from summary statistics alone.
@@ -115,8 +137,12 @@ The results should be understood as exploratory patterns supported by consistenc
 ├── data/
 │   └── Motivation_Challenge_Test.xlsx
 ├── images/
+│   ├── average-motivation-score-by-category.png
+│   ├── motivation-category-hierarchy.png
+│   └── participant-clusters-pca-kmeans.png
 ├── models/
 ├── reports/
+│   └── project-summary.md
 ├── Motivation_Challenge_Final.ipynb
 ├── README.md
 ├── requirements.txt

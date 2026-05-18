@@ -1,0 +1,34 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE/editor files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local outputs and temporary files
+*.tmp
+*.log
+
+# Model artifacts, if generated locally
+models/*.pkl
+models/*.joblib
+models/*.sav
+
+# Keep folders visible
+!images/.gitkeep
+!reports/.gitkeep
+!models/.gitkeep

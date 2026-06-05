@@ -1,8 +1,8 @@
 ﻿# Motivation-Based Participant Segmentation
 
-This project uses unsupervised learning to explore motivation profiles across participants and relationships among motivation categories.
+Unsupervised learning project for exploring participant motivation profiles and relationships among motivation categories.
 
-The goal is not to predict a target variable. Instead, the project investigates whether hidden structure exists in a small motivation dataset: whether participants can be grouped by similar motivation profiles, and whether motivation categories show related response patterns across participants.
+The project uses clustering, PCA, and motivation-category analysis to investigate whether hidden structure exists in a small dataset without relying on a target variable.
 
 For a concise non-technical overview, see the [project summary](reports/project-summary.md).
 
